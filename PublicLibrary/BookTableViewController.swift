@@ -3,6 +3,7 @@ import UIKit
 class BookTableViewController: UITableViewController {
 
     var books = [Book]()
+    var shelf: Shelf?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +23,6 @@ class BookTableViewController: UITableViewController {
         return books.count
     }
 
-    
     private struct StoryBoard {
         static let CellReuseIdentifier = "Book"
     }

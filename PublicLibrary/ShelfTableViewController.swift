@@ -40,6 +40,7 @@ class ShelfTableViewController: UITableViewController {
             let bookViewController = segue.destinationViewController as! BookTableViewController
             if let selectedRow = tableView.indexPathForSelectedRow()?.row {
                 bookViewController.books = shelfs[selectedRow].books
+                bookViewController.shelf = shelfs[selectedRow]
             }
         }
     }
