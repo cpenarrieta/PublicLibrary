@@ -9,6 +9,11 @@ class BookTableViewController: UITableViewController {
         super.viewDidLoad()
         navigationItem.rightBarButtonItem = self.editButtonItem()
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tableView.reloadData()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -43,6 +48,15 @@ class BookTableViewController: UITableViewController {
             books.removeAtIndex(indexPath.row)
             bookToDelete.unshelf()
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
+        }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "ShowBookDetail" {
+            let bookDetailViewController = segue.destinationViewController as! BookDetailViewController
+            if let selectedRow = tableView.indexPathForSelectedRow()?.row {
+                bookDetailViewController.book = books[selectedRow]
+            }
         }
     }
 }

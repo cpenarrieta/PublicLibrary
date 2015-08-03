@@ -19,6 +19,7 @@
 		35A52C9D1B61EBE400722DF3 /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A52C9C1B61EBE400722DF3 /* Library.swift */; };
 		35A52C9F1B61EBF500722DF3 /* Shelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A52C9E1B61EBF500722DF3 /* Shelf.swift */; };
 		35A52CA11B61EC0600722DF3 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A52CA01B61EC0600722DF3 /* Book.swift */; };
+		35CD32251B6F3E2B00AE30EC /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CD32241B6F3E2B00AE30EC /* BookDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		35A52C9C1B61EBE400722DF3 /* Library.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
 		35A52C9E1B61EBF500722DF3 /* Shelf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shelf.swift; sourceTree = "<group>"; };
 		35A52CA01B61EC0600722DF3 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		35CD32241B6F3E2B00AE30EC /* BookDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				35A52C7C1B61EA5600722DF3 /* AppDelegate.swift */,
 				35A52C7E1B61EA5600722DF3 /* ViewController.swift */,
 				35A52C801B61EA5600722DF3 /* Main.storyboard */,
+				35CD32241B6F3E2B00AE30EC /* BookDetailViewController.swift */,
 				3556A0281B6EFADF00F16D44 /* BookTableViewController.swift */,
 				3556A0261B6EEA6E00F16D44 /* ShelfTableViewController.swift */,
 				3556A0241B6EC2F400F16D44 /* LibraryTableViewController.swift */,
@@ -235,6 +238,7 @@
 				3556A0291B6EFADF00F16D44 /* BookTableViewController.swift in Sources */,
 				35A52C7F1B61EA5600722DF3 /* ViewController.swift in Sources */,
 				35A52C7D1B61EA5600722DF3 /* AppDelegate.swift in Sources */,
+				35CD32251B6F3E2B00AE30EC /* BookDetailViewController.swift in Sources */,
 				35A52CA11B61EC0600722DF3 /* Book.swift in Sources */,
 				35A52C9D1B61EBE400722DF3 /* Library.swift in Sources */,
 				3556A0271B6EEA6E00F16D44 /* ShelfTableViewController.swift in Sources */,
