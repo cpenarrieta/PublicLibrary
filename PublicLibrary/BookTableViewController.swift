@@ -6,6 +6,7 @@ class BookTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,5 +35,14 @@ class BookTableViewController: UITableViewController {
         cell.detailTextLabel?.text = book.author
         
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == UITableViewCellEditingStyle.Delete {
+            let bookToDelete = books[indexPath.row]
+            books.removeAtIndex(indexPath.row)
+            bookToDelete.unshelf()
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
+        }
     }
 }
