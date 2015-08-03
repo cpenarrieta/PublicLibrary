@@ -98,9 +98,13 @@
                         <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8Iq-ct-k51">
                             <rect key="frame" x="-23" y="-15" width="600" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
                             <state key="normal" title="+">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <segue destination="TcH-dL-CnK" kind="show" identifier="ShowBookDetailForAdd" id="LXx-zv-cca"/>
+                            </connections>
                         </button>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Book" textLabel="gfO-Jg-T22" detailTextLabel="1Ik-fg-cNv" style="IBUITableViewCellStyleSubtitle" id="sGk-Kz-2M1">
@@ -251,4 +255,7 @@
             <point key="canvasLocation" x="636" y="457"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="LXx-zv-cca"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -57,6 +57,11 @@ class BookTableViewController: UITableViewController {
             if let selectedRow = tableView.indexPathForSelectedRow()?.row {
                 bookDetailViewController.book = books[selectedRow]
             }
+        } else if segue.identifier == "ShowBookDetailForAdd" {
+            let bookDetailViewController = segue.destinationViewController as! BookDetailViewController
+            bookDetailViewController.book = Book(title: "", author: "", description: "")
+            bookDetailViewController.book?.enshelf(shelf!)
+            books.append(bookDetailViewController.book!)
         }
     }
 }
